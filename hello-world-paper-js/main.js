@@ -16,4 +16,4 @@ $(document).ready(function(){
   }
   paper.view.draw();
   console.log('main.js loaded');
-});
+}); 
