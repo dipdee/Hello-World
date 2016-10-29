@@ -13,7 +13,7 @@ $(document).ready(function(){
   tool.onMouseDown = function(event){
     var c = Shape.Circle(event.point.x, event.point.y, 20);
     c.fillColor = 'green';
-  }
+  };
   paper.view.draw();
   console.log('main.js loaded');
-}); 
+});
