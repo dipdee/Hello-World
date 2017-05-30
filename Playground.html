@@ -6,7 +6,7 @@
 <script>
 'use strict'
 
-
+//First Task
 var sequence = function(a, b){
   return function(){
     var result = a;
@@ -24,6 +24,23 @@ console.log(generator());//16
 console.log(generator2());//7
 console.log(generator2());//9
 console.log(generator2());//11
+
+//Second Task
+
+var gen = sequence(5,4);
+
+var take = function (gen, x){
+  var arr = [];
+  for (var i = 0;i < x; i++ ){
+    arr.push(gen());
+  }
+  return arr;
+};
+
+
+var gen2 = sequence(0, 2);
+console.log(take(gen2, 5));//[0, 2, 4, 6, 8]
+
 
 
 </script>
