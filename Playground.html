@@ -1,0 +1,33 @@
+<html>
+<head>
+ <meta charset="UTF-8">
+</head>
+<body>
+<script>
+'use strict'
+
+
+var sequence = function(a, b){
+  return function(){
+    var result = a;
+    a+=b;
+    return result
+  }
+
+};
+
+var generator = sequence(10, 3);
+var generator2 = sequence(5, 2);
+console.log(generator()); // 10
+console.log(generator());//13
+console.log(generator());//16
+console.log(generator2());//7
+console.log(generator2());//9
+console.log(generator2());//11
+
+
+</script>
+</body>
+
+
+</html>
